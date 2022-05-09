@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED229FF22829405600576E83 /* LaraNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED229FF12829405600576E83 /* LaraNotesApp.swift */; };
+		ED229FF42829405600576E83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED229FF32829405600576E83 /* ContentView.swift */; };
+		ED229FF62829405800576E83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED229FF52829405800576E83 /* Assets.xcassets */; };
+		ED229FF92829405800576E83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED229FF82829405800576E83 /* Preview Assets.xcassets */; };
+		ED229FFB2829405800576E83 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED229FFA2829405800576E83 /* Persistence.swift */; };
+		ED229FFE2829405800576E83 /* LaraNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED229FFC2829405800576E83 /* LaraNotes.xcdatamodeld */; };
+		ED22A0082829405900576E83 /* LaraNotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED22A0072829405900576E83 /* LaraNotesTests.swift */; };
+		ED22A0122829405900576E83 /* LaraNotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED22A0112829405900576E83 /* LaraNotesUITests.swift */; };
+		ED22A0142829405900576E83 /* LaraNotesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED22A0132829405900576E83 /* LaraNotesUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED22A0042829405900576E83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED229FE62829405600576E83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED229FED2829405600576E83;
+			remoteInfo = LaraNotes;
+		};
+		ED22A00E2829405900576E83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED229FE62829405600576E83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED229FED2829405600576E83;
+			remoteInfo = LaraNotes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED229FEE2829405600576E83 /* LaraNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaraNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED229FF12829405600576E83 /* LaraNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaraNotesApp.swift; sourceTree = "<group>"; };
+		ED229FF32829405600576E83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ED229FF52829405800576E83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED229FF82829405800576E83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ED229FFA2829405800576E83 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		ED229FFD2829405800576E83 /* LaraNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LaraNotes.xcdatamodel; sourceTree = "<group>"; };
+		ED22A0032829405900576E83 /* LaraNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaraNotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED22A0072829405900576E83 /* LaraNotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaraNotesTests.swift; sourceTree = "<group>"; };
+		ED22A00D2829405900576E83 /* LaraNotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaraNotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED22A0112829405900576E83 /* LaraNotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaraNotesUITests.swift; sourceTree = "<group>"; };
+		ED22A0132829405900576E83 /* LaraNotesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaraNotesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED229FEB2829405600576E83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED22A0002829405900576E83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED22A00A2829405900576E83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED229FE52829405600576E83 = {
+			isa = PBXGroup;
+			children = (
+				ED229FF02829405600576E83 /* LaraNotes */,
+				ED22A0062829405900576E83 /* LaraNotesTests */,
+				ED22A0102829405900576E83 /* LaraNotesUITests */,
+				ED229FEF2829405600576E83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED229FEF2829405600576E83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED229FEE2829405600576E83 /* LaraNotes.app */,
+				ED22A0032829405900576E83 /* LaraNotesTests.xctest */,
+				ED22A00D2829405900576E83 /* LaraNotesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED229FF02829405600576E83 /* LaraNotes */ = {
+			isa = PBXGroup;
+			children = (
+				ED229FF12829405600576E83 /* LaraNotesApp.swift */,
+				ED229FF32829405600576E83 /* ContentView.swift */,
+				ED229FF52829405800576E83 /* Assets.xcassets */,
+				ED229FFA2829405800576E83 /* Persistence.swift */,
+				ED229FFC2829405800576E83 /* LaraNotes.xcdatamodeld */,
+				ED229FF72829405800576E83 /* Preview Content */,
+			);
+			path = LaraNotes;
+			sourceTree = "<group>";
+		};
+		ED229FF72829405800576E83 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ED229FF82829405800576E83 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ED22A0062829405900576E83 /* LaraNotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED22A0072829405900576E83 /* LaraNotesTests.swift */,
+			);
+			path = LaraNotesTests;
+			sourceTree = "<group>";
+		};
+		ED22A0102829405900576E83 /* LaraNotesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED22A0112829405900576E83 /* LaraNotesUITests.swift */,
+				ED22A0132829405900576E83 /* LaraNotesUITestsLaunchTests.swift */,
+			);
+			path = LaraNotesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED229FED2829405600576E83 /* LaraNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED22A0172829405900576E83 /* Build configuration list for PBXNativeTarget "LaraNotes" */;
+			buildPhases = (
+				ED229FEA2829405600576E83 /* Sources */,
+				ED229FEB2829405600576E83 /* Frameworks */,
+				ED229FEC2829405600576E83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaraNotes;
+			productName = LaraNotes;
+			productReference = ED229FEE2829405600576E83 /* LaraNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED22A0022829405900576E83 /* LaraNotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED22A01A2829405900576E83 /* Build configuration list for PBXNativeTarget "LaraNotesTests" */;
+			buildPhases = (
+				ED229FFF2829405900576E83 /* Sources */,
+				ED22A0002829405900576E83 /* Frameworks */,
+				ED22A0012829405900576E83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED22A0052829405900576E83 /* PBXTargetDependency */,
+			);
+			name = LaraNotesTests;
+			productName = LaraNotesTests;
+			productReference = ED22A0032829405900576E83 /* LaraNotesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED22A00C2829405900576E83 /* LaraNotesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED22A01D2829405900576E83 /* Build configuration list for PBXNativeTarget "LaraNotesUITests" */;
+			buildPhases = (
+				ED22A0092829405900576E83 /* Sources */,
+				ED22A00A2829405900576E83 /* Frameworks */,
+				ED22A00B2829405900576E83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED22A00F2829405900576E83 /* PBXTargetDependency */,
+			);
+			name = LaraNotesUITests;
+			productName = LaraNotesUITests;
+			productReference = ED22A00D2829405900576E83 /* LaraNotesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED229FE62829405600576E83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					ED229FED2829405600576E83 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					ED22A0022829405900576E83 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = ED229FED2829405600576E83;
+					};
+					ED22A00C2829405900576E83 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = ED229FED2829405600576E83;
+					};
+				};
+			};
+			buildConfigurationList = ED229FE92829405600576E83 /* Build configuration list for PBXProject "LaraNotes" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED229FE52829405600576E83;
+			productRefGroup = ED229FEF2829405600576E83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED229FED2829405600576E83 /* LaraNotes */,
+				ED22A0022829405900576E83 /* LaraNotesTests */,
+				ED22A00C2829405900576E83 /* LaraNotesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED229FEC2829405600576E83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED229FF92829405800576E83 /* Preview Assets.xcassets in Resources */,
+				ED229FF62829405800576E83 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED22A0012829405900576E83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED22A00B2829405900576E83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED229FEA2829405600576E83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED229FFB2829405800576E83 /* Persistence.swift in Sources */,
+				ED229FF42829405600576E83 /* ContentView.swift in Sources */,
+				ED229FF22829405600576E83 /* LaraNotesApp.swift in Sources */,
+				ED229FFE2829405800576E83 /* LaraNotes.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED229FFF2829405900576E83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED22A0082829405900576E83 /* LaraNotesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED22A0092829405900576E83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED22A0142829405900576E83 /* LaraNotesUITestsLaunchTests.swift in Sources */,
+				ED22A0122829405900576E83 /* LaraNotesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED22A0052829405900576E83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED229FED2829405600576E83 /* LaraNotes */;
+			targetProxy = ED22A0042829405900576E83 /* PBXContainerItemProxy */;
+		};
+		ED22A00F2829405900576E83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED229FED2829405600576E83 /* LaraNotes */;
+			targetProxy = ED22A00E2829405900576E83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ED22A0152829405900576E83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED22A0162829405900576E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED22A0182829405900576E83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LaraNotes/Preview Content\"";
+				DEVELOPMENT_TEAM = JYTUW4QXB6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christianpaulo.LaraNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED22A0192829405900576E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LaraNotes/Preview Content\"";
+				DEVELOPMENT_TEAM = JYTUW4QXB6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christianpaulo.LaraNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ED22A01B2829405900576E83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JYTUW4QXB6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christianpaulo.LaraNotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaraNotes.app/LaraNotes";
+			};
+			name = Debug;
+		};
+		ED22A01C2829405900576E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JYTUW4QXB6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christianpaulo.LaraNotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaraNotes.app/LaraNotes";
+			};
+			name = Release;
+		};
+		ED22A01E2829405900576E83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JYTUW4QXB6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christianpaulo.LaraNotesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LaraNotes;
+			};
+			name = Debug;
+		};
+		ED22A01F2829405900576E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JYTUW4QXB6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christianpaulo.LaraNotesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LaraNotes;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED229FE92829405600576E83 /* Build configuration list for PBXProject "LaraNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED22A0152829405900576E83 /* Debug */,
+				ED22A0162829405900576E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED22A0172829405900576E83 /* Build configuration list for PBXNativeTarget "LaraNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED22A0182829405900576E83 /* Debug */,
+				ED22A0192829405900576E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED22A01A2829405900576E83 /* Build configuration list for PBXNativeTarget "LaraNotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED22A01B2829405900576E83 /* Debug */,
+				ED22A01C2829405900576E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED22A01D2829405900576E83 /* Build configuration list for PBXNativeTarget "LaraNotesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED22A01E2829405900576E83 /* Debug */,
+				ED22A01F2829405900576E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ED229FFC2829405800576E83 /* LaraNotes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ED229FFD2829405800576E83 /* LaraNotes.xcdatamodel */,
+			);
+			currentVersion = ED229FFD2829405800576E83 /* LaraNotes.xcdatamodel */;
+			path = LaraNotes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ED229FE62829405600576E83 /* Project object */;
+}
