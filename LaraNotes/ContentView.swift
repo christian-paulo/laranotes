@@ -6,83 +6,99 @@
 //
 
 import SwiftUI
-import CoreData
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
+    
+    @FocusState private var focusedReleaseID: UUID?
+    @State var displayAddReleaseView = false
+    @State var report: Report = Report.api
 
     var body: some View {
         NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+            
+            VStack(alignment: .leading) {
+                HeaderSale(wallet: report)
+                Text("Lançamentos").font(.title2).fontWeight(.bold).padding(.leading)
+                VStack(alignment: .leading){
+                    releasesList
+                }
+                
+            }.navigationBarTitleDisplayMode(.inline)
+            
+                .toolbar {
+//                    ToolbarItem(placement: .navigationBarTrailing) {
+//                        navigationBarLink
+//                    }
+                    ToolbarItem(placement: .bottomBar) {
+                        bottomBarItemContent
                     }
                 }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
+                .sheet(isPresented: $displayAddReleaseView){
+                    AddRelease(isPresented: $displayAddReleaseView, report: $report)
                 }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+            
+        }
+        
+    }
+    
+    private var releasesList: some View{
+        List(report.reportsByDate, id: \.date) { (date, releases) in
+            Section( // Uma sessao para cada dia, ou seja, para cada chave do dicionario
+                header: Text(date),
+                content: {
+                    ForEach(releases) { release in
+                        HStack{
+                            Text(release.title)
+                                .padding(.top, 6)
+                                .padding(.bottom, 6)
+                            Spacer()
+                            Text(release.type == .despesa ? "- \(release.value.formatted(.currency(code: "BRL")))" : "+ \(release.value.formatted(.currency(code: "BRL")))")
+                                .foregroundColor(.white)
+                                .padding(5)
+                                .background {
+                                    RoundedRectangle(cornerRadius: 8)
+                                        .fill(release.type == .despesa ? Color.red : Color.green)
+                                }
+                        }
                     }
                 }
-            }
-            Text("Select an item")
+            )
         }
+        .listStyle(.plain)
+        .padding(.top, -10)
+        
     }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+    
+    private var navigationBarLink: some View {
+        HStack{
+            NavigationLink(destination: Charts()){
+                Image(systemName: "chart.bar.xaxis")
             }
         }
     }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+    
+    private var bottomBarItemContent: some View {
+        HStack {
+            Button {
+                displayAddReleaseView = true
+            } label: {
+                Label("Novo Lançamento", systemImage: "plus")
+                    .labelStyle(.titleAndIcon)
+                    .font(.system(.body, design: .rounded).weight(.medium))
             }
+            Spacer()
         }
+        .padding(.leading, -10)
     }
+    
 }
-
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        Group {
+            ContentView(report: .api).preferredColorScheme(.dark).previewDevice("iPhone 13 Pro Max")
+            ContentView(report: .api).previewDevice("iPhone 13 Pro Max").previewInterfaceOrientation(.portraitUpsideDown)
+        }
     }
 }
+

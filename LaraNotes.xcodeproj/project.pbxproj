@@ -16,6 +16,11 @@
 		ED22A0082829405900576E83 /* LaraNotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED22A0072829405900576E83 /* LaraNotesTests.swift */; };
 		ED22A0122829405900576E83 /* LaraNotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED22A0112829405900576E83 /* LaraNotesUITests.swift */; };
 		ED22A0142829405900576E83 /* LaraNotesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED22A0132829405900576E83 /* LaraNotesUITestsLaunchTests.swift */; };
+		ED413540282E87A7007F7AD6 /* HeaderSale.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41353F282E87A7007F7AD6 /* HeaderSale.swift */; };
+		ED413542282E9FDF007F7AD6 /* Release.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED413541282E9FDF007F7AD6 /* Release.swift */; };
+		ED8F3F582832757D00056D29 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8F3F572832757D00056D29 /* Report.swift */; };
+		EDEDF7DF282D2C08006C764B /* AddRelease.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEDF7DE282D2C08006C764B /* AddRelease.swift */; };
+		EDEDF7E1282D8490006C764B /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEDF7E0282D8490006C764B /* Charts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,11 @@
 		ED22A00D2829405900576E83 /* LaraNotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaraNotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED22A0112829405900576E83 /* LaraNotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaraNotesUITests.swift; sourceTree = "<group>"; };
 		ED22A0132829405900576E83 /* LaraNotesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaraNotesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ED41353F282E87A7007F7AD6 /* HeaderSale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSale.swift; sourceTree = "<group>"; };
+		ED413541282E9FDF007F7AD6 /* Release.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Release.swift; sourceTree = "<group>"; };
+		ED8F3F572832757D00056D29 /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		EDEDF7DE282D2C08006C764B /* AddRelease.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRelease.swift; sourceTree = "<group>"; };
+		EDEDF7E0282D8490006C764B /* Charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +110,15 @@
 			children = (
 				ED229FF12829405600576E83 /* LaraNotesApp.swift */,
 				ED229FF32829405600576E83 /* ContentView.swift */,
+				ED41353F282E87A7007F7AD6 /* HeaderSale.swift */,
+				ED413541282E9FDF007F7AD6 /* Release.swift */,
+				EDEDF7DE282D2C08006C764B /* AddRelease.swift */,
+				EDEDF7E0282D8490006C764B /* Charts.swift */,
 				ED229FF52829405800576E83 /* Assets.xcassets */,
 				ED229FFA2829405800576E83 /* Persistence.swift */,
 				ED229FFC2829405800576E83 /* LaraNotes.xcdatamodeld */,
 				ED229FF72829405800576E83 /* Preview Content */,
+				ED8F3F572832757D00056D29 /* Report.swift */,
 			);
 			path = LaraNotes;
 			sourceTree = "<group>";
@@ -263,7 +278,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDEDF7E1282D8490006C764B /* Charts.swift in Sources */,
+				ED413542282E9FDF007F7AD6 /* Release.swift in Sources */,
+				EDEDF7DF282D2C08006C764B /* AddRelease.swift in Sources */,
+				ED413540282E87A7007F7AD6 /* HeaderSale.swift in Sources */,
 				ED229FFB2829405800576E83 /* Persistence.swift in Sources */,
+				ED8F3F582832757D00056D29 /* Report.swift in Sources */,
 				ED229FF42829405600576E83 /* ContentView.swift in Sources */,
 				ED229FF22829405600576E83 /* LaraNotesApp.swift in Sources */,
 				ED229FFE2829405800576E83 /* LaraNotes.xcdatamodeld in Sources */,
